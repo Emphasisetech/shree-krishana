@@ -1,0 +1,27 @@
+{
+    "type": "mysql",
+    "host": "remotemysql.com",
+    "port": 3306,
+    "username": "IuhBboUAS8",
+    "password": "7KHqhVjFho",
+    "connectTimeout": 6600000,
+    "acquireTimeout": 6600000,
+    "timeout": 6600000,
+    "database": "IuhBboUAS8",
+    "logging": false,
+    "entities": [
+        "./api/v1/models/*.js"
+    ],
+    "migrations": [
+        "./api/v1/migration/**/*.js"
+    ],
+    "subscribers": [
+        "./api/v1/subscriber/**/*.js"
+    ],
+    "migrationRun": true,
+    "cli": {
+        "entitiesDir": "./api/v1/models",
+        "migrationsDir": "./api/v1/migration",
+        "subscribersDir": "./api/v1/subscriber"
+    }
+}
